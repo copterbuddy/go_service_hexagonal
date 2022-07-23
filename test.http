@@ -1,0 +1,18 @@
+
+### Get Customer All  
+GET http://localhost:8000/customers HTTP/1.1
+
+### Get Customer By ID  
+GET http://localhost:8000/customers/3 HTTP/1.1
+
+### Create Account
+POST http://localhost:8000/customers/2003/accounts HTTP/1.1
+Content-Type: application/json
+
+{
+    "account_type": "saving",
+    "amount" : 5000
+}
+
+### Get Account Id
+Get http://localhost:8000/customers/2003/accounts HTTP/1.1
